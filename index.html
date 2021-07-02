@@ -1,0 +1,52 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>WebGL Projek</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/2.8.1/gl-matrix-min.js"
+      integrity="sha512-zhHQR0/H5SEBL3Wn6yYSaTTZej12z0hVZKOv3TwCUXT1z5qeqGcXJLLrbERYRScEDDpYIJhPC1fk31gqR783iQ=="
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="main.js" defer></script>
+  </head>
+
+  <body>
+    <canvas id="glcanvas"></canvas>
+    <div id="uiContainer">
+      <div id="ui">
+        <div id="x"></div>
+        <div id="y"></div>
+        <div id="z"></div>
+        <div id="angleX"></div>
+        <div id="angleY"></div>
+        <div id="angleZ"></div>
+        <div id="scaleX"></div>
+        <div id="scaleY"></div>
+        <div id="scaleZ"></div>
+        <div id="moveCamera"></div>
+        <div>
+          <label for="shape">Choose shape:</label>
+          <select id="shape">
+            <option value="cube">Cube</option>
+            <option value="pyramid">Pyramid</option>
+          </select>
+        </div>
+        <div>
+          <label for="texture">Enable Texture:</label>
+          <select id="texture">
+            <option value="no">No</option>
+            <option value="yes">Yes</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <script src="resources/webgl-utils.js"></script>
+    <script src="resources/webgl-lessons-ui.js"></script>
+  </body>
+</html>
